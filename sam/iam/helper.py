@@ -10,7 +10,7 @@ def _process_credentials_file(role, profile_name, aws_creds):
         atc.set(profile_name, "aws_access_key_id", str(aws_creds.access_key))
         atc.set(profile_name, "aws_secret_access_key", str(aws_creds.secret_key))
         atc.set(profile_name, "aws_session_token", str(aws_creds.session))
-        atc.set(profile_name, "region", "us-east-1")
+        atc.set(profile_name, "region", "us-west-1")
         atc.set(profile_name, "samiam_role", role)
 
 

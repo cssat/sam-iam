@@ -21,6 +21,7 @@ def iam():
 @iam.command("get-creds")
 @click.option('-v', '--verbose', 'debug', is_flag=True, default=False, help='Debug messages (default=False)')
 @click.option('-s', '-sso-url', 'sso_url',
+              default="https://idp.u.washington.edu/idp/profile/SAML2/Unsolicited/SSO?providerId=urn:amazon:webservices",
               help='SSO url for idp which is ping url.')
 @click.option('-p', '-profile-name', 'profile_name',
               default="temp_sso_creds",
